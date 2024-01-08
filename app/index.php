@@ -17,10 +17,15 @@
 <?php
 include("frontend/html/templates/topBar.html");
 ?>
+<div id="dropdown-content">
+    <a>Научно-практическая конференция "Инновационные технологии в области неврологии и смежных специальностей"</a>
+    <a>Научно-образовательная конференция "Неврологические образовательные университеты"</a>
+</div>
 </header>
 <main></main>
 <footer></footer>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="frontend/scripts/swiper.js"></script>
+<script src="frontend/scripts/topPanelNavigation.js"></script>
 </body>
 </html>
