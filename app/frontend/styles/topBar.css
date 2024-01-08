@@ -1,0 +1,136 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+.topBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #d9effc;
+}
+
+@media only screen and (min-width: 1280px) {
+    .topBarImages {
+        display: flex;
+        flex-direction: row;
+        margin-left: auto;
+    }
+    .topBarImages > img {
+        width: calc(62px + 2vw);
+        height: calc(62px + 2vw);
+    }
+    #flag {
+        margin: 10px 25px 10px 15px;
+        height: 100px;
+        min-height: 100px;
+        width: 100px;
+        min-width: 100px;
+    }
+}
+
+.topBarContext {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: start;
+    margin-top: 20px;
+}
+
+.topBarContext > a {
+    text-decoration: none;
+}
+
+.topBarContext > a > div:last-child {
+    margin-top: 5px;
+    font-weight: 600;
+}
+.topBarContext > a > div {
+    color: black;
+    font-size: calc(5 * .25vw);
+}
+
+.topNavPanel {
+    user-select: none;
+    border-top: 2px solid #a5a5a5;
+    border-bottom: 2px solid #a5a5a5;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bRight ,.bLeft {
+    width: calc(3 * .50vw);
+    height: inherit;
+    border: none;
+    z-index: 9999999;
+    outline: none;
+    cursor: pointer;
+    transition: 100ms ease-in-out;
+}
+
+.bLeft:active, .bRight:active{
+    opacity: 50%;
+}
+
+.bLeft {
+    visibility: hidden;
+    margin-right: 50px;
+}
+
+.bRight {
+    margin-left: 50px;
+    transform: rotate(180deg);
+}
+
+/* Стили для флага */
+#flag {
+    border: 1px solid #c6c6c6;
+    position: relative;
+    border-radius: 300px;
+    background: #fff;
+    overflow: hidden;
+}
+
+/* Стили для волн на флаге */
+.wave2, .wave3 {
+    left: -50%;
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    border-radius: 45%;
+    animation: wave 10s linear infinite;
+}
+
+.wave2 {
+    top: 30%;
+    background-color: blue;
+}
+
+.wave3 {
+    top: 66%;
+    background-color: red;
+}
+
+@keyframes wave {
+    100% {
+        transform: rotate(360deg);
+    }
+}

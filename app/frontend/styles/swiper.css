@@ -1,0 +1,32 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    padding: 7px 0;
+    text-align: center;
+    border-radius: 7px;
+    background-color: #cdcdcd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide > a {
+    width: 100%;
+    padding: 0 15px;
+    color: black;
+    font-size: 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 100%;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+/* Скрыть неактивные кнопки навигации */
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+    display: none; /* Скрыть кнопки, имеющие класс .swiper-button-disabled */
+}
