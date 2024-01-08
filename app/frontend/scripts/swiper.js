@@ -1,25 +1,33 @@
 'use strict'
-document.addEventListener('DOMContentLoaded',()=>{
+document.addEventListener('DOMContentLoaded', () => {
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
-        spaceBetween: 10,
-        mousewheel:true,
+        spaceBetween: 30,
+        mousewheel: true,
         navigation: {
             nextEl: ".bRight",
             prevEl: ".bLeft",
             hiddenClass: 'test',
         },
         breakpoints: {
-            640: {
+            300: {
                 slidesPerView: 2,
-                spaceBetween: 20,
+                spaceBetween: 20
+            },
+            640: {
+                slidesPerView: 3,
+                spaceBetween: 30,
             },
             768: {
                 slidesPerView: 4,
-                spaceBetween: 40,
+                spaceBetween: 30,
             },
             1024: {
-                slidesPerView: 5,
+                slidesPerView: 4,
+                spaceBetween: 50,
+            },
+            2000: {
+                slidesPerView: 6,
                 spaceBetween: 50,
             },
         },

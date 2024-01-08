@@ -23,24 +23,141 @@ header {
     background-color: #d9effc;
 }
 
-@media only screen and (min-width: 1280px) {
-    .topBarImages {
-        display: flex;
-        flex-direction: row;
-        margin-left: auto;
+
+@media (min-width: 300px) and (max-width: 599px) {
+    .topBarImages > img {
+        width: calc(7 * 1.25vw);
+        height: calc(7 * 1.25vw);
+        margin-right: 5px;
     }
+    #flag {
+        margin: 5px 0 10px 5px;
+        min-height: calc(7 * 1.35vw);
+        min-width: calc(7 * 1.35vw);
+    }
+    .topNavPanel {
+        padding: calc(1 * .50vw) 0;
+    }
+    .topBarContext > a > div:first-child {
+        font-size: calc(6 * .50vw);
+    }
+    .topBarContext > a > div {
+        text-align: center;
+        font-size: calc(5 * .50vw);
+    }
+
+    .bRight ,.bLeft {
+        width: calc(3 * .90vw);
+    }
+    .topNavPanel {
+        border-top: 1px solid #a5a5a5;
+        border-bottom: 1px solid #a5a5a5;
+    }
+    .topBarImages {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+    .topBarImages > img {
+        width: calc(6 * 1.25vw);
+        height: calc(6 * 1.25vw);
+        margin-right: 5px;
+    }
+    #flag {
+        margin: 5px 0 5px 5px;
+        min-height: calc(6 * 1.25vw);
+        min-width: calc(6 * 1.25vw);
+    }
+    .topNavPanel {
+        padding: calc(1 * .50vw) 0;
+    }
+    .topBarContext > a > div:first-child {
+        font-size: calc(14 * .15vw);
+    }
+    .topBarContext > a > div {
+        font-size: calc(8 * .21vw);
+    }
+
+    .bRight ,.bLeft {
+        width: calc(3 * .90vw);
+    }
+    .topNavPanel {
+        border-top: 1px solid #a5a5a5;
+        border-bottom: 1px solid #a5a5a5;
+    }
+    .topBarImages {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1279px) {
+    .topBarImages > img {
+        width: calc(5 * 1.15vw);
+        height: calc(5 * 1.15vw);
+        margin-right: 5px;
+    }
+    #flag {
+        margin: 10px calc(1 * 1.5vw) 10px 15px;
+        min-height: calc(5 * 1.15vw);
+        min-width: calc(5 * 1.15vw);
+    }
+    .topNavPanel {
+        padding: calc(1 * .50vw) 0;
+    }
+    .topBarContext > a > div {
+        font-size: calc(7 * .25vw);
+    }
+    .bRight ,.bLeft {
+        width: calc(3 * .70vw);
+    }
+    .topNavPanel {
+        border-top: 2px solid #a5a5a5;
+        border-bottom: 2px solid #a5a5a5;
+    }
+    .topBarImages {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1280px) {
     .topBarImages > img {
         width: calc(5 * 1vw);
         height: calc(5 * 1vw);
         margin-right: 5px;
     }
     #flag {
-        margin: 10px 25px 10px 15px;
+        margin: 10px calc(1 * 1.5vw) 10px 15px;
         min-height: calc(5 * 1vw);
         min-width: calc(5 * 1vw);
     }
+    .topNavPanel {
+        padding: calc(1 * .50vw) 0;
+    }
+    .topBarContext > a > div {
+        font-size: calc(6 * .25vw);
+    }
+
+    .bRight ,.bLeft {
+        width: calc(3 * .55vw);
+    }
+
+    .topNavPanel {
+        border-top: 2px solid #a5a5a5;
+        border-bottom: 2px solid #a5a5a5;
+    }
+
+    .topBarImages {
+        flex-direction: row;
+    }
 }
 
+.topBarImages {
+    display: flex;
+    margin-left: auto;
+}
+
+/* выпадающий список */
 #dropdown-content {
     display: none;
     position: absolute;
@@ -83,6 +200,9 @@ header {
     align-items: center;
 }
 
+.topBarContext > a:hover > div {
+    color: #707070;
+}
 .topBarContext > a {
     text-decoration: none;
 }
@@ -92,22 +212,18 @@ header {
     font-weight: 600;
 }
 .topBarContext > a > div {
+    transition: 200ms ease-out;
     color: black;
-    font-size: calc(5 * .28vw);
 }
 
 .topNavPanel {
     user-select: none;
-    border-top: 2px solid #a5a5a5;
-    border-bottom: 2px solid #a5a5a5;
-    padding: 10px 0;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
 .bRight ,.bLeft {
-    width: calc(3 * .50vw);
     height: inherit;
     border: none;
     z-index: 9999999;

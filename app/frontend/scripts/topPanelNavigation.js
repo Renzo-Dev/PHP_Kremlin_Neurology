@@ -1,6 +1,7 @@
 "use strict";
 
 document.addEventListener('DOMContentLoaded', () => {
+    // file1.js
     let isDropDownVisible = false;
     let dropDownElem = document.getElementById('AnnualConferences');
     dropDownElem.addEventListener('mouseenter', showDropDownMenu);
