@@ -25,6 +25,10 @@ header {
 
 
 @media (min-width: 300px) and (max-width: 599px) {
+    .topBar {
+        padding: 5px;
+    }
+
     .topBarImages > img {
         width: calc(7 * 1.25vw);
         height: calc(7 * 1.25vw);
@@ -55,6 +59,12 @@ header {
     }
     .topBarImages {
         flex-direction: row;
+    }
+    .bRight {
+        margin-right: 5px;
+    }
+    .bLeft {
+        margin-left: 5px;
     }
 }
 
