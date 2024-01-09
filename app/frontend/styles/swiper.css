@@ -1,6 +1,6 @@
 @media (min-width: 250px) and (max-width: 599px) {
     .swiper-slide > a {
-        font-size: calc(10 * .35vw);
+        font-size: calc(8 * .35vw);
     }
 
     .swiper-slide {
@@ -44,6 +44,7 @@
 }
 
 .swiper-slide {
+    height: fit-content;
     text-align: center;
     border-radius: 7px;
     background-color: #cdcdcd;

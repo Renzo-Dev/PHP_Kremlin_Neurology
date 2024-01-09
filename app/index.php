@@ -10,20 +10,22 @@
     <link rel="icon" href="frontend/images/Flag_of_Russia.svg" type="image/x-icon"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="frontend/styles/swiper.css">
-    <link rel="stylesheet" href="frontend/styles/topBar.css">
+    <link rel="stylesheet" href="frontend/styles/index.css">
+    <link rel="stylesheet" href="frontend/styles/main.css">
+    <link rel="stylesheet" href="frontend/styles/footer.css">
 </head>
 <body>
 <header>
-    <?php
-    include("frontend/html/templates/topBar.html");
-    ?>
+    <?php include("frontend/html/templates/topBar.html"); ?>
     <div id="dropdown-content">
         <a>Научно-практическая конференция "Инновационные технологии в области неврологии и смежных специальностей"</a>
         <a>Научно-образовательная конференция "Неврологические образовательные университеты"</a>
     </div>
 </header>
-<main></main>
-<footer></footer>
+<main>
+    <?php include("frontend/html/main.html"); ?>
+</main>
+<?php include("frontend/html/templates/footer.html"); ?>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="frontend/scripts/swiper.js"></script>
 <script src="frontend/scripts/topPanelNavigation.js"></script>

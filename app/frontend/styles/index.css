@@ -1,16 +1,20 @@
-/*СДЕЛАТЬ адаптацию для DropDown*/
-
 html,
 body {
     height: 100%;
 }
+a:visited {
+    color: black;
+}
 
 body {
+    height: 100vh;
     background: #eee;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     color: #000;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -78,6 +82,13 @@ header {
         margin-left: 5px;
         margin-right: 10px;
     }
+
+    #dropdown-content {
+        width: calc(40 * 1vw);
+    }
+    #dropdown-content > a {
+        font-size: calc(5 * .60vw);
+    }
 }
 
 @media (min-width: 600px) and (max-width: 899px) {
@@ -125,9 +136,24 @@ header {
     .bRight {
         margin-left: 30px;
     }
+
+    #dropdown-content {
+        width: calc(25 * 1vw);
+    }
+    #dropdown-content > a {
+        font-size: calc(3 * .60vw);
+    }
 }
 
 @media (min-width: 900px) and (max-width: 1279px) {
+
+    #dropdown-content {
+        width: calc(16 * 1vw);
+    }
+    #dropdown-content > a {
+        font-size: calc(2 * .60vw);
+    }
+
     .topBarImages > img {
         width: calc(5 * 1.15vw);
         height: calc(5 * 1.15vw);
@@ -171,6 +197,14 @@ header {
 }
 
 @media (min-width: 1280px) {
+
+    #dropdown-content {
+        width: calc(16 * 1vw);
+    }
+    #dropdown-content > a {
+        font-size: calc(2 * .60vw);
+    }
+
     .topBarImages > img {
         width: calc(5 * 1vw);
         height: calc(5 * 1vw);
@@ -224,15 +258,12 @@ header {
     position: absolute;
     user-select: none;
     background-color: transparent;
-
-    width: 300px;
     border-radius: 13px;
 }
 
 #dropdown-content > a:last-child {
     margin-top: 10px;
 }
-
 #dropdown-content > a {
     box-shadow: 0 4px 3px 4px rgba(34, 60, 80, 0.2);
     color: black;
@@ -243,7 +274,6 @@ header {
     background-color: white;
 
     border-radius: 15px;
-    font-size: 20px;
     padding: 12px 16px;
 }
 
