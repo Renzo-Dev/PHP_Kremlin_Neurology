@@ -7,10 +7,12 @@
         padding: 5px 0;
     }
 }
+
 @media (min-width: 600px) and (max-width: 899px) {
     .swiper-slide > a {
         font-size: calc(7 * .25vw);
     }
+
     .swiper-slide {
         padding: calc(3 * .25vw) 0;
     }
@@ -20,6 +22,7 @@
     .swiper-slide > a {
         font-size: calc(5 * .25vw);
     }
+
     .swiper-slide {
         padding: 7px 0;
     }
@@ -50,7 +53,7 @@
     transition: 200ms ease-in-out;
 }
 
-.swiper-slide:hover{
+.swiper-slide:hover {
     background-color: #a0a0a0;
 }
 

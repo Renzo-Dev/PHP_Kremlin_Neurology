@@ -1,3 +1,5 @@
+/*СДЕЛАТЬ адаптацию для DropDown*/
+
 html,
 body {
     height: 100%;
@@ -28,6 +30,7 @@ header {
     .topBar {
         padding: 5px;
     }
+
     .topBarImages > img {
         width: calc(7 * 1.25vw);
         height: calc(7 * 1.25vw);
@@ -39,6 +42,7 @@ header {
         min-height: calc(8 * 1.35vw);
         min-width: calc(8 * 1.35vw);
     }
+
     .topNavPanel {
         padding: calc(3 * .50vw) 0;
     }
@@ -46,24 +50,30 @@ header {
     .topBarContext > a > div:first-child {
         font-size: calc(7 * .50vw);
     }
+
     .topBarContext > a > div {
         text-align: left;
         font-size: calc(5 * .65vw);
     }
-    .bRight ,.bLeft {
+
+    .bRight, .bLeft {
         width: calc(5 * 1vw);
     }
+
     .topNavPanel {
         border-top: 1px solid #a5a5a5;
         border-bottom: 1px solid #a5a5a5;
     }
+
     .topBarImages {
         flex-direction: column-reverse;
     }
+
     .bRight {
         margin-right: 5px;
         margin-left: 10px;
     }
+
     .bLeft {
         margin-left: 5px;
         margin-right: 10px;
@@ -76,34 +86,42 @@ header {
         height: calc(6 * 1.25vw);
         margin-right: 5px;
     }
+
     #flag {
         margin: 5px 0 5px 5px;
         min-height: calc(6 * 1.25vw);
         min-width: calc(6 * 1.25vw);
     }
+
     .topNavPanel {
         padding: calc(1 * .50vw) 0;
     }
+
     .topBarContext > a > div:first-child {
         font-size: calc(14 * .15vw);
     }
+
     .topBarContext > a > div {
         font-size: calc(8 * .21vw);
     }
 
-    .bRight ,.bLeft {
+    .bRight, .bLeft {
         width: calc(3 * .90vw);
     }
+
     .topNavPanel {
         border-top: 1px solid #a5a5a5;
         border-bottom: 1px solid #a5a5a5;
     }
+
     .topBarImages {
         flex-direction: row;
     }
+
     .bLeft {
         margin-right: 30px;
     }
+
     .bRight {
         margin-left: 30px;
     }
@@ -115,24 +133,30 @@ header {
         height: calc(5 * 1.15vw);
         margin-right: 5px;
     }
+
     #flag {
         margin: 10px calc(1 * 1.5vw) 10px 15px;
         min-height: calc(5 * 1.15vw);
         min-width: calc(5 * 1.15vw);
     }
+
     .topNavPanel {
         padding: calc(1 * .50vw) 0;
     }
+
     .topBarContext > a > div {
         font-size: calc(7 * .25vw);
     }
-    .bRight ,.bLeft {
+
+    .bRight, .bLeft {
         width: calc(3 * .70vw);
     }
+
     .topNavPanel {
         border-top: 2px solid #a5a5a5;
         border-bottom: 2px solid #a5a5a5;
     }
+
     .topBarImages {
         flex-direction: row;
     }
@@ -140,6 +164,7 @@ header {
     .bLeft {
         margin-right: 50px;
     }
+
     .bRight {
         margin-left: 50px;
     }
@@ -151,25 +176,29 @@ header {
         height: calc(5 * 1vw);
         margin-right: 5px;
     }
+
     #flag {
         margin: 10px calc(1 * 1.5vw) 10px 15px;
         min-height: calc(5 * 1vw);
         min-width: calc(5 * 1vw);
     }
+
     .topNavPanel {
         padding: calc(1 * .50vw) 0;
     }
+
     .topBarContext > a > div {
         font-size: calc(6 * .25vw);
     }
 
-    .bRight ,.bLeft {
+    .bRight, .bLeft {
         width: calc(3 * .55vw);
     }
 
     .bLeft {
         margin-right: 50px;
     }
+
     .bRight {
         margin-left: 50px;
     }
@@ -235,6 +264,7 @@ header {
 .topBarContext > a:hover > div {
     color: #707070;
 }
+
 .topBarContext > a {
     text-decoration: none;
 }
@@ -243,6 +273,7 @@ header {
     margin-top: 5px;
     font-weight: 600;
 }
+
 .topBarContext > a > div {
     transition: 200ms ease-out;
     color: black;
@@ -255,7 +286,7 @@ header {
     align-items: center;
 }
 
-.bRight ,.bLeft {
+.bRight, .bLeft {
     height: inherit;
     border: none;
     z-index: 9999999;
@@ -264,7 +295,7 @@ header {
     transition: 100ms ease-in-out;
 }
 
-.bLeft:active, .bRight:active{
+.bLeft:active, .bRight:active {
     opacity: 50%;
 }
 
