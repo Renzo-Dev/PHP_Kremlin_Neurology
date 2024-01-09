@@ -26,7 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
-
     function hideDropDownMenu() {
         // Hide dropdown menu after a delay if test is false
         // Скрыть выпадающее меню после задержки, если test равен false
