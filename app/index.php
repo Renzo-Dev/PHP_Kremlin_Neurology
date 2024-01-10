@@ -9,8 +9,8 @@
     <!-- Link Swiper's CSS-->
     <link rel="icon" href="frontend/images/Flag_of_Russia.svg" type="image/x-icon"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="frontend/styles/swiper.css">
-    <link rel="stylesheet" href="frontend/styles/index.css">
+    <link rel="stylesheet" href="frontend/styles/tNavPSwiper.css">
+    <link rel="stylesheet" href="frontend/styles/topBar.css">
     <link rel="stylesheet" href="frontend/styles/main.css">
     <link rel="stylesheet" href="frontend/styles/footer.css">
 </head>
