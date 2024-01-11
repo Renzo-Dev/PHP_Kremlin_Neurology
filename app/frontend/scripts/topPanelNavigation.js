@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let dropdownContent = document.getElementById('dropdown-content');
         dropdownContent.style.display = 'inline';
         dropdownContent.style.left = dropDownElem.getBoundingClientRect().left + (dropDownElem.getBoundingClientRect().width - dropdownContent.getBoundingClientRect().width) / 2 + 'px';
-        dropdownContent.style.top = dropDownElem.getBoundingClientRect().top + 45 + 'px';
+        dropdownContent.style.top = dropDownElem.getBoundingClientRect().bottom + 10 + 'px';
         // Add event listeners for mouseenter and mouseleave to dropdown-content links
         // Добавить обработчики событий для mouseenter и mouseleave для ссылок в dropdown-content
         dropdownContent.querySelectorAll('a').forEach(elem => {

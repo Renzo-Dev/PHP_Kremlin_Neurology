@@ -17,10 +17,6 @@
 <body>
 <header>
     <?php include("frontend/html/templates/topBar.html"); ?>
-    <div id="dropdown-content">
-        <a>Научно-практическая конференция "Инновационные технологии в области неврологии и смежных специальностей"</a>
-        <a>Научно-образовательная конференция "Неврологические образовательные университеты"</a>
-    </div>
 </header>
 <main>
     <?php include("frontend/html/main.html"); ?>

@@ -92,6 +92,9 @@ header {
     #dropdown-content > a {
         font-size: calc(5 * .60vw);
     }
+    #dropdown-content > a:last-child {
+        margin-top: 7px;
+    }
 }
 
 @media (min-width: 600px) and (max-width: 899px) {
@@ -143,10 +146,12 @@ header {
     #dropdown-content > a {
         font-size: calc(3 * .60vw);
     }
+    #dropdown-content > a:last-child {
+        margin-top: 5px;
+    }
 }
 
 @media (min-width: 900px) and (max-width: 1279px) {
-
     #dropdown-content {
         width: calc(16 * 1vw);
     }
@@ -190,6 +195,10 @@ header {
 
     .bRight {
         margin-left: 50px;
+    }
+
+    #dropdown-content > a:last-child {
+        margin-top: 5px;
     }
 }
 
@@ -239,6 +248,10 @@ header {
     .topBarImages {
         flex-direction: row;
     }
+
+    #dropdown-content > a:last-child {
+        margin-top: 10px;
+    }
 }
 
 .topBarImages {
@@ -255,9 +268,6 @@ header {
     border-radius: 13px;
 }
 
-#dropdown-content > a:last-child {
-    margin-top: 10px;
-}
 #dropdown-content > a {
     box-shadow: 0 4px 3px 4px rgba(34, 60, 80, 0.2);
     color: black;
@@ -364,4 +374,27 @@ header {
     100% {
         transform: rotate(360deg);
     }
+}
+
+/* Стили для скроллбара */
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+/* Стили для бегунка скроллбара */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 13px;
+}
+
+/* Изменение стилей при наведении на бегунок скроллбара */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Стили для фона скроллбара */
+::-webkit-scrollbar-track {
+    background: #c3c3c3;
+    border-radius: 7px;
 }
