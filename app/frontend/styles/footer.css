@@ -3,11 +3,13 @@
         font-size: calc(6 * .25vw);
     }
 }
+
 @media (min-width: 600px) and (max-width: 899px) {
     footer {
         font-size: calc(3 * .35vw);
     }
 }
+
 @media (min-width: 900px) and (max-width: 1279px) {
     footer {
         font-size: calc(3 * .25vw);

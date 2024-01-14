@@ -13,8 +13,8 @@ body {
 
 body {
     height: 100vh;
-    background: rgba(255,255,255,0.48);
-    font-family: Lato,sans-serif;
+    background: rgba(255, 255, 255, 0.48);
+    font-family: Lato, sans-serif;
     color: #000;
     margin: 0;
     padding: 0;
@@ -36,6 +36,12 @@ header {
 
 
 @media (min-width: 300px) and (max-width: 599px) {
+
+    ::-webkit-scrollbar {
+        width: 2px;
+        height: 2px;
+    }
+
     .topBar {
         padding: 5px;
     }
@@ -89,15 +95,23 @@ header {
     #dropdown-content {
         width: calc(40 * 1vw);
     }
+
     #dropdown-content > a {
         font-size: calc(5 * .60vw);
     }
+
     #dropdown-content > a:last-child {
         margin-top: 7px;
     }
 }
 
 @media (min-width: 600px) and (max-width: 899px) {
+
+    ::-webkit-scrollbar {
+        width: 2px;
+        height: 2px;
+    }
+
     .topBarImages > img {
         width: calc(6 * 1.25vw);
         height: calc(6 * 1.25vw);
@@ -143,18 +157,26 @@ header {
     #dropdown-content {
         width: calc(25 * 1vw);
     }
+
     #dropdown-content > a {
         font-size: calc(3 * .60vw);
     }
+
     #dropdown-content > a:last-child {
         margin-top: 5px;
     }
 }
 
 @media (min-width: 900px) and (max-width: 1279px) {
+    ::-webkit-scrollbar {
+        width: 2px;
+        height: 2px;
+    }
+
     #dropdown-content {
         width: calc(16 * 1vw);
     }
+
     #dropdown-content > a {
         font-size: calc(2 * .60vw);
     }
@@ -204,16 +226,22 @@ header {
 
 @media (min-width: 1280px) {
 
+    ::-webkit-scrollbar {
+        width: 3px;
+        height: 3px;
+    }
+
     #dropdown-content {
         width: calc(16 * 1vw);
     }
+
     #dropdown-content > a {
         font-size: calc(2 * .60vw);
     }
 
     .topBarImages > img {
-        width: calc(5 * 1vw);
-        height: calc(5 * 1vw);
+        width: calc(5 * 1.25vw);
+        height: calc(5 * 1.25vw);
         margin-right: 5px;
     }
 
@@ -254,9 +282,14 @@ header {
     }
 }
 
+.topBarImages > img:first-child {
+    display: none;
+}
+
 .topBarImages {
     display: flex;
     margin-left: auto;
+    margin-right: 5px;
 }
 
 /* выпадающий список */
@@ -377,11 +410,6 @@ header {
 }
 
 /* Стили для скроллбара */
-::-webkit-scrollbar {
-    width: 4px;
-    height: 4px;
-}
-
 /* Стили для бегунка скроллбара */
 ::-webkit-scrollbar-thumb {
     background: #888;

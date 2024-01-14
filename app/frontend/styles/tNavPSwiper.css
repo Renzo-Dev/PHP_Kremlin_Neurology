@@ -22,6 +22,7 @@
     .swiper-slide > a {
         font-size: calc(5 * .25vw);
     }
+
     .swiper-slide {
         padding: calc(1 * .65vw) 0;
     }
