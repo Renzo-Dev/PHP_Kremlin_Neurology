@@ -65,7 +65,7 @@ fieldset legend a:hover {
 
 @media (min-width: 600px) and (max-width: 899px) {
     main {
-        min-height: 503px;
+        min-height: 403px;
     }
 
     .content__wrapper {
@@ -74,7 +74,7 @@ fieldset legend a:hover {
     }
 
     h2 {
-        font-size: calc(2 * .63vw);
+        font-size: calc(3 * .51vw);
         text-align: center;
         margin-bottom: 15px;
     }
@@ -82,7 +82,7 @@ fieldset legend a:hover {
     .context {
         min-height: inherit;
         padding: 0 20px;
-        height: calc(19 * 1vw);
+        height: calc(26 * 1vw);
         max-height: max-content;
         display: flex;
         flex-direction: column;
@@ -91,7 +91,7 @@ fieldset legend a:hover {
 
     .context p {
         text-align: left;
-        font-size: calc(4 * .32vw);
+        font-size: calc(4 * .40vw);;
     }
 
     .context p a {
@@ -116,15 +116,13 @@ fieldset legend a:hover {
         flex-direction: column;
         height: fit-content;
         max-height: 96%;
-    }
-
-    .employee_wrapper {
         border: 1px solid #878787;
+        border-radius: 5px;
     }
 
     .employee_wrapper h3 {
         text-align: center;
-        font-size: calc(1 * 1vw);
+        font-size: calc(1 * 1.10vw);
         white-space: nowrap;
         padding: calc(1 * .40vw);
     }
@@ -138,8 +136,8 @@ fieldset legend a:hover {
     .employee_list a {
         border-radius: 7px;
         padding: 0 5px;
-        margin: 5px 5px;
-        font-size: calc(1 * 1.25vw);
+        margin: 2px 2px;
+        font-size: calc(1 * 1.35vw);
         text-decoration: none;
         text-align: left;
         transition: 200ms ease-in;
@@ -152,9 +150,9 @@ fieldset legend a:hover {
     .content__wrapper fieldset {
         border-radius: 7px;
         border: 1px solid black;
-        font-size: calc(1 * 1.30vw);
+        font-size: calc(1 * 1.50vw);
         margin-top: auto;
-        min-height: 195px;
+        min-height: fit-content;
 
         overflow: auto;
         display: flex;
@@ -256,9 +254,6 @@ fieldset legend a:hover {
         flex-direction: column;
         height: fit-content;
         max-height: 96%;
-    }
-
-    .employee_wrapper {
         border: 1px solid #878787;
     }
 
