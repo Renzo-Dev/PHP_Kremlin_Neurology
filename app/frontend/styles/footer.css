@@ -1,12 +1,12 @@
-@media (min-width: 300px) and (max-width: 599px) {
+@media (min-width: 280px) and (max-width: 599px) {
     footer {
-        font-size: calc(6 * .25vw);
+        font-size: calc(8 * .25vw);
     }
 }
 
 @media (min-width: 600px) and (max-width: 899px) {
     footer {
-        font-size: calc(3 * .35vw);
+        font-size: calc(4 * .35vw);
     }
 }
 

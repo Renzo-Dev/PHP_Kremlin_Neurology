@@ -59,35 +59,45 @@ fieldset legend a:hover {
     background-color: #b9b9b9;
 }
 
-@media (min-width: 300px) and (max-width: 599px) {
+@media (min-width: 280px) and (max-width: 599px) {
     main {
-        min-height: 403px;
+        min-height: 515px;
+        flex-direction: column-reverse;
     }
 
     .content__wrapper {
         flex-direction: column;
         padding: 10px;
+        min-height: 1%;
+    }
+
+    .context__wrapper {
+        margin-bottom: 15px;
     }
 
     h2 {
-        font-size: calc(3 * .51vw);
+        font-size: calc(4 * .75vw);
         text-align: center;
         margin-bottom: 15px;
     }
 
     .context {
-        min-height: inherit;
         padding: 0 20px;
-        height: calc(26 * 1vw);
+        min-height: 120px;
         max-height: max-content;
+        height: calc(27 * 1vh);
+        overflow: auto;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
+    .context p:first-child {
+        margin-bottom: 5px;
+    }
 
     .context p {
         text-align: left;
-        font-size: calc(4 * .40vw);;
+        font-size: calc(7 * .45vw);;
     }
 
     .context p a {
@@ -99,68 +109,71 @@ fieldset legend a:hover {
     }
 
     .image {
-        width: calc(18 * 1.27vw);
-        height: calc(15 * 1.27vw);
+        width: calc(85 * .50vw);
+        height: 100%;
         border-radius: 7px;
     }
 
     .employee_wrapper {
-        margin: 10px 10px 10px 0;
-        width: calc(50 * .27vw);
+        align-self: center;
+        margin: 10px 10px 0 0;
+        width: fit-content;
+        max-width: 90%;
         display: flex;
-        padding-bottom: 5px;
         flex-direction: column;
         height: fit-content;
-        max-height: 96%;
         border: 1px solid #878787;
         border-radius: 5px;
     }
 
     .employee_wrapper h3 {
         text-align: center;
-        font-size: calc(1 * 1.10vw);
-        white-space: nowrap;
+        font-size: calc(3 * 1vw);
+        white-space: normal;
         padding: calc(1 * .40vw);
+        max-height: 50px;
+        width: 100%;
+        margin: 1px 0;
     }
 
     .employee_list {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         overflow: auto;
     }
 
     .employee_list a {
+        background-color: #e5e5e5;
         border-radius: 7px;
-        padding: 0 5px;
+        padding: 4px;
         margin: 2px 2px;
-        font-size: calc(1 * 1.35vw);
+        min-width: fit-content;
+        font-size: calc(5 * .60vw);
         text-decoration: none;
         text-align: left;
         transition: 200ms ease-in;
     }
 
-    .employee_list a:hover {
-        padding: calc(1 * .45vw);
-    }
-
     .content__wrapper fieldset {
+        padding: 0 10px;
         border-radius: 7px;
         border: 1px solid black;
-        font-size: calc(1 * 1.50vw);
+        font-size: calc(11 * .25vw);
         margin-top: auto;
         min-height: fit-content;
 
         overflow: auto;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-between;
         align-items: center;
     }
 
     fieldset legend {
         text-align: center;
-        padding: 0 20px;
-        font-size: calc(1 * 1.30vw);
+        padding: 0 10px;
+        font-size: calc(13 * .25vw);
+        font-weight: 600;
     }
 
     fieldset legend a {
@@ -172,9 +185,10 @@ fieldset legend a:hover {
     .context__info {
         margin-left: 10px;
         display: flex;
+        flex-direction: row;
         justify-content: space-around;
         align-items: start;
-        width: 60%;
+        width: 100%;
     }
 
     .context__info > div > div:first-child {
@@ -191,7 +205,7 @@ fieldset legend a:hover {
     .context__address {
         height: fit-content;
         padding: 10px;
-        width: 40%;
+        width: 100%;
         display: flex;
         flex-direction: column;
     }
@@ -202,30 +216,39 @@ fieldset legend a:hover {
         min-height: 403px;
     }
 
+    .context__wrapper {
+        margin-bottom: 15px;
+    }
+
     .content__wrapper {
         flex-direction: column;
         padding: 10px;
     }
 
     h2 {
-        font-size: calc(3 * .51vw);
+        font-size: calc(4 * .51vw);
         text-align: center;
         margin-bottom: 15px;
     }
 
     .context {
-        min-height: inherit;
         padding: 0 20px;
-        height: calc(26 * 1vw);
-        max-height: max-content;
+        min-height: 200px;
+        height: fit-content;
+        max-height: calc(23 * 1.3vh);;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        overflow: auto;
+    }
+
+    .context p:first-child {
+        margin-bottom: 10px;
     }
 
     .context p {
         text-align: left;
-        font-size: calc(4 * .40vw);;
+        font-size: calc(11 * .20vw);;
     }
 
     .context p a {
@@ -237,14 +260,14 @@ fieldset legend a:hover {
     }
 
     .image {
-        width: calc(18 * 1.27vw);
-        height: calc(15 * 1.27vw);
+        width: calc(58 * .50vw);
+        height: calc(55 * .50vw);
         border-radius: 7px;
     }
 
     .employee_wrapper {
         margin: 10px 10px 10px 0;
-        width: calc(50 * .27vw);
+        width: calc(80 * .27vw);
         display: flex;
         padding-bottom: 5px;
         flex-direction: column;
@@ -256,12 +279,13 @@ fieldset legend a:hover {
 
     .employee_wrapper h3 {
         text-align: center;
-        font-size: calc(1 * 1.10vw);
+        font-size: calc(6 * .30vw);
         white-space: nowrap;
         padding: calc(1 * .40vw);
     }
 
     .employee_list {
+        padding: 5px;
         display: flex;
         flex-direction: column;
         overflow: auto;
@@ -271,7 +295,7 @@ fieldset legend a:hover {
         border-radius: 7px;
         padding: 0 5px;
         margin: 2px 2px;
-        font-size: calc(1 * 1.35vw);
+        font-size: calc(7 * .30vw);
         text-decoration: none;
         text-align: left;
         transition: 200ms ease-in;
@@ -282,23 +306,25 @@ fieldset legend a:hover {
     }
 
     .content__wrapper fieldset {
+        padding: 0 10px;
         border-radius: 7px;
         border: 1px solid black;
-        font-size: calc(1 * 1.50vw);
+        font-size: calc(7 * .30vw);
         margin-top: auto;
         min-height: fit-content;
 
         overflow: auto;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-between;
         align-items: center;
     }
 
     fieldset legend {
         text-align: center;
-        padding: 0 20px;
-        font-size: calc(1 * 1.30vw);
+        padding: 0 10px;
+        font-size: calc(10 * .25vw);
+        font-weight: 600;
     }
 
     fieldset legend a {
@@ -310,9 +336,10 @@ fieldset legend a:hover {
     .context__info {
         margin-left: 10px;
         display: flex;
+        flex-direction: row;
         justify-content: space-around;
         align-items: start;
-        width: 60%;
+        width: 100%;
     }
 
     .context__info > div > div:first-child {
@@ -329,7 +356,7 @@ fieldset legend a:hover {
     .context__address {
         height: fit-content;
         padding: 10px;
-        width: 40%;
+        width: 100%;
         display: flex;
         flex-direction: column;
     }

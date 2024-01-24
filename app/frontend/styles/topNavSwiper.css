@@ -1,6 +1,6 @@
 @media (min-width: 250px) and (max-width: 599px) {
     .swiper-slide > a {
-        font-size: calc(8 * .35vw);
+        font-size: calc(9 * .35vw);
     }
 
     .swiper-slide {
@@ -10,7 +10,7 @@
 
 @media (min-width: 600px) and (max-width: 899px) {
     .swiper-slide > a {
-        font-size: calc(6 * .25vw);
+        font-size: calc(8 * .25vw);
     }
 
     .swiper-slide {
