@@ -47,9 +47,8 @@ window.addEventListener('DOMContentLoaded', () => {
         if (regex.test(password)) {
             try {
                 let currentUrl = window.location.href;
-                let queryPath = currentUrl.replace('?library', '');
-                // queryPath += "index.php";
-                console.log(queryPath);
+                let queryPath = currentUrl.replace('index.php?library', '');
+                queryPath += "backend/AccessLibrary.php";
 
                 // Отправляем запрос на сервер для проверки пароля
                 let response = await fetch(queryPath, {
@@ -64,13 +63,19 @@ window.addEventListener('DOMContentLoaded', () => {
                     let errorMessage = mainContent.querySelector('#errorMessage');
                     errorMessage.textContent = 'Ошибка, неверный пароль';
                     errorMessage.style.display = 'inline';
-                    console.log('Ошибка: Неавторизованный доступ');
                     throw new Error('Unauthorized'); // Генерируем ошибку для перехода в блок catch
                 }
 
                 // Получаем текст ответа и обновляем основной контент
                 let data = await response.text();
-                mainContent.innerHTML = data;
+                if (data === "401") {
+                    // Показываем сообщение об ошибке для неверного пароля
+                    let errorMessage = mainContent.querySelector('#errorMessage');
+                    errorMessage.textContent = 'Ошибка, неверный пароль';
+                    errorMessage.style.display = 'inline';
+                    console.error('Ошибка: Неавторизованный доступ');
+                    throw new Error('Unauthorized'); // Генерируем ошибку для перехода в блок catch
+                }
             } catch (error) {
                 // Обрабатываем ошибку, выводим в консоль сообщение об ошибке, исключая статус 401
                 if (error.message !== 'Unauthorized') {
