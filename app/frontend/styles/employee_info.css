@@ -59,6 +59,7 @@ main {
         margin-left: 20px;
         font-size: calc(4 * .23vw);
     }
+
     ::-webkit-scrollbar {
         width: 10px;
         height: 10px;

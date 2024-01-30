@@ -27,4 +27,5 @@ function loadFile($fileName)
         echo "Файл не существует.";
     }
 }
+
 ?>

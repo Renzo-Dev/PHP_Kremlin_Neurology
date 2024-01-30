@@ -56,6 +56,7 @@ main {
         padding-left: 20px;
         margin-bottom: 15px;
     }
+
     .history__wrapper > h2 {
         font-size: calc(5 * .25vw);
         margin-top: 10px;

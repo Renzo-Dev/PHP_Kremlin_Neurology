@@ -14,7 +14,7 @@ main {
     }
 
     main > .context {
-        font-family: "Segoe UI",serif;
+        font-family: "Segoe UI", serif;
         font-size: calc(4 * .26vw);
         font-weight: 600;
     }
