@@ -1,12 +1,18 @@
 <?php
-header('Content-Type: application/json');
+//header('Content-Type: application/json');
+
+if ($_SERVER["REQUEST_METHOD"] === "GET") {
+    if (isset($_GET["FileName"]) && !empty($_GET["FileName"])) {
+        loadFile($_GET["FileName"]);
+    }
+}
 
 function loadFile($fileName)
 {
     // Указываем путь к файлу
 //    $file_path = 'C:/inetpub/vhosts/u0308478.plsk.regruhosting.ru/test/' . $fileName;
-    $file_path = 'C:\\inetpub\\vhosts\\u0308478.plsk.regruhosting.ru\\test\\' . $fileName;
-
+    $file_path = 'C:\\inetpub\\vhosts\\u0308478.plsk.regruhosting.ru\\FileLibrary\\' . $fileName;
+//    echo $file_path;
     // Проверяем, существует ли файл
     if (file_exists($file_path)) {
         // Устанавливаем заголовки для скачивания файла
