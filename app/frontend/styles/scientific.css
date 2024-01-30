@@ -1,0 +1,21 @@
+main {
+    width: 100%;
+    flex: 1;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+@media (min-width: 1280px) {
+    main > h2 {
+        margin-bottom: 10px;
+    }
+
+    main > .context {
+        font-family: "Segoe UI",serif;
+        font-size: calc(4 * .26vw);
+        font-weight: 600;
+    }
+}

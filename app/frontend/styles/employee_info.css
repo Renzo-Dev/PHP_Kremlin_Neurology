@@ -17,8 +17,8 @@ main {
     }
 
     .info__wrapper > img {
-        width: 200px;
-        height: 200px;
+        width: 220px;
+        height: 220px;
         border-radius: 7px;
     }
 
@@ -48,6 +48,10 @@ main {
         border-radius: 13px;
         background-color: #ebebeb;
         list-style: decimal;
+    }
+
+    .info__wrapper > h2 {
+        margin-top: 5px;
     }
 
     .info__wrapper > .context > ol > li {
