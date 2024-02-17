@@ -1,0 +1,97 @@
+@media screen and (min-width: 1920px) and (max-width: 2560px) {
+    #mainContent {
+        box-sizing: border-box;
+        width: 100vw;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        align-items: center;
+    }
+
+    #mainContent > h2 {
+        width: inherit;
+        text-align: center;
+        font-size: calc(5 * .25vw);
+    }
+
+    .qualifications {
+        display: flex;
+        text-align: center;
+        padding: 15px;
+        height: 80px;
+    }
+
+    a:link, a:visited {
+        color: black;
+    }
+
+    .qualifications > a:not(:last-child) {
+        margin-right: 5px;
+    }
+
+    .qualifications > a:hover {
+        background-color: #cfcfcf;
+        font-size: calc(5 * .25vw);
+        padding: 15px;
+    }
+
+    .qualifications > a {
+        transition: 200ms ease-in-out;
+        border-radius: 7px;
+        text-align: center;
+        font-size: calc(5 * .25vw);
+        text-decoration: none;
+        background-color: #e2e2e2;
+        padding: 10px;
+    }
+
+    .context {
+        border: 2px solid #cfcfcf;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 7px;
+        font-size: calc(4 * .25vw);
+        text-align: left;
+    }
+
+    .qua_info_wrapper {
+        display: flex;
+        flex-direction: row;
+        margin-top: 2vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .qua_info_wrapper > .content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .qua_info_wrapper > .content > a:hover {
+        background-color: #cfcfcf;
+    }
+
+    .qua_info_wrapper > .content > a {
+        transition: 200ms ease-in-out;
+        font-size: calc(5 * .25vw);
+        text-align: center;
+        text-decoration: none;
+        background-color: rgb(210, 218, 255);
+        padding: 15px;
+        border-radius: 7px;
+    }
+    .qua_info_wrapper > .content > div {
+        border-radius: 7px;
+        background-color: #f5f5f5;
+        border: 2px solid #dedede;
+        font-size: calc(4 * .27vw);
+        padding: 10px;
+        margin: 10px;
+    }
+    .qua_info_wrapper > .content > div > div:first-child {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+}
