@@ -1,9 +1,6 @@
 @media (min-width: 250px) and (max-width: 599px) {
     .swiper-slide > a {
         font-size: calc(9 * .35vw);
-    }
-
-    .swiper-slide {
         padding: calc(1 * .45vw) 0;
     }
 }
@@ -11,29 +8,20 @@
 @media (min-width: 600px) and (max-width: 899px) {
     .swiper-slide > a {
         font-size: calc(8 * .25vw);
-    }
-
-    .swiper-slide {
         padding: calc(1 * .45vw) 0;
     }
 }
 
 @media (min-width: 900px) and (max-width: 1279px) {
     .swiper-slide > a {
-        font-size: calc(5 * .25vw);
-    }
-
-    .swiper-slide {
         padding: calc(1 * .65vw) 0;
+        font-size: calc(5 * .25vw);
     }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1280px) and (max-width: 2560px) {
     .swiper-slide > a {
-        font-size: calc(2 * .53vw);
-    }
-
-    .swiper-slide {
+        font-size: calc(2 * .60vw);
         padding: calc(1 * .45vw) 0;
     }
 }

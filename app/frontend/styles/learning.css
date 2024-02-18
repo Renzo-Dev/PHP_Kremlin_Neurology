@@ -1,12 +1,13 @@
-@media screen and (min-width: 1920px) and (max-width: 2560px) {
+@media screen and (min-width: 1280px) and (max-width: 2560px) {
     #mainContent {
         box-sizing: border-box;
-        width: 100vw;
-        height: 100%;
+        width: 100%;
+        height: fit-content;
         display: flex;
         flex-direction: column;
         margin-top: 10px;
         align-items: center;
+        overflow: auto;
     }
 
     #mainContent > h2 {
@@ -27,18 +28,24 @@
     }
 
     .qualifications > a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         margin-right: 5px;
-        transition: background-color 200ms ease-in-out;
+        transition: all 200ms ease-in-out;
         border-radius: 7px;
         text-align: center;
         font-size: calc(5 * .25vw);
         text-decoration: none;
         background-color: #e2e2e2;
-        padding: 10px;
+        padding: 5px 25px;
     }
 
     .qualifications > a:hover {
         background-color: #cfcfcf;
+        font-size: calc(5 * .24vw);
+        transform: translateY(5px);
     }
 
     .context {
@@ -46,14 +53,14 @@
         padding: 10px;
         margin: 10px;
         border-radius: 7px;
-        font-size: calc(4 * .25vw);
+        font-size: calc(4 * .30vw);
+        overflow: auto;
         text-align: left;
     }
 
     .qua_info_wrapper {
         display: flex;
         flex-direction: row;
-        margin-top: 2vh;
         justify-content: center;
         align-items: center;
     }
