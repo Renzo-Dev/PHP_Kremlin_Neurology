@@ -3,14 +3,22 @@ $path = "frontend/html/main.html";
 
 if ($_SERVER['REQUEST_METHOD'] == "GET") {
     if (isset($_GET['learning'])) { // получения страницы Библиотека
-        $path = "frontend/html/learning.html";
-    } else    if (isset($_GET['library'])) { // получения страницы Библиотека
+        if (!empty($_GET['learning'])) {
+            if ($_GET['learning'] === 'ordinatura') {
+                $path = "frontend/html/learning_prices/ordinatura.html";
+            } else if($_GET['learning'] === 'aspiranctura') {
+                $path = "frontend/html/learning_prices/aspiranctura.html";
+            }
+        } else {
+            $path = "frontend/html/learning.html";
+        }
+    } else if (isset($_GET['library'])) { // получения страницы Библиотека
         $path = "frontend/html/library.html";
     } else if (isset($_GET['history'])) { // получение страницы История
         $path = "frontend/html/history.html";
     } else if (isset($_GET['scientific'])) { // получение страницы История
         $path = "frontend/html/scientific_work.html";
-    } else if (isset($_GET['employee_info']) && !empty($_GET['employee_info'])) { // запросы для биографии работников
+    } else if (!empty($_GET['employee_info'])) { // запросы для биографии работников
         if ($_GET['employee_info'] === "Prof_Vladimir_Ivanovich_Shmyrev") {
             $path = "frontend/html/employee_info/Prof_Vladimir_Ivanovich_Shmyrev.html";
         } else if ($_GET['employee_info'] === "AS_Nikolay_Vladislavovich_Babenkov") {

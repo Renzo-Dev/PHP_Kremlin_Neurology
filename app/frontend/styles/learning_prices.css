@@ -1,0 +1,79 @@
+@media screen and (min-width: 1920px) and (max-width: 2560px) {
+
+    #mainContent {
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #mainContent > div:first-child {
+        margin: 20px 0;
+        font-size: calc(5 * .25vw);
+        font-weight: 600;
+    }
+
+    #mainContent >.table {
+        height: calc(25 * 1vw);
+        overflow: auto;
+        border: 2px solid rgba(105,105,105,0.77);
+        border-radius: 10px
+    }
+
+    #mainContent > .table > table {
+        border: none;
+        border-collapse: collapse;
+    }
+
+    #mainContent th:not(:last-child) {
+        border-right: 2px solid rgba(105,105,105,0.77);
+    }
+
+    #mainContent th:first-child {
+        text-align: left;
+        padding: 5px;
+    }
+
+    #mainContent th:not(:first-child){
+        width: 400px;
+        padding: 15px;
+    }
+
+    #mainContent th {
+        font-size: calc(4 * .27vw);
+        font-family: Arial, serif;
+        border-bottom: 2px solid rgba(105,105,105,0.77);
+    }
+
+    #mainContent td:not(:last-child) {
+        border-right: 2px solid rgba(105, 105, 105, 0.77);
+    }
+
+    #mainContent tr:not(:last-child) > td {
+        border-bottom: 2px solid rgba(105,105,105,0.77);
+    }
+
+    #mainContent td:not(:first-child) {
+        text-align: center;
+    }
+
+    #mainContent td {
+        font-size: calc(4 * .27vw);
+        padding: 5px;
+    }
+
+    #mainContent > .info1 {
+        margin-top: 10px;
+        font-size: calc(4 * .25vw);
+        font-weight: 600;
+        text-align: center;
+    }
+
+    #mainContent > .info2 , #mainContent > .info3 {
+        text-align: center;
+        margin-top: 10px;
+        font-size: calc(4 * .27vw);
+    }
+}
