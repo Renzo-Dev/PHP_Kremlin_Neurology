@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] == "GET") {
         if (!empty($_GET['learning'])) {
             if ($_GET['learning'] === 'ordinatura') {
                 $path = "frontend/html/learning_prices/ordinatura.html";
-            } else if($_GET['learning'] === 'aspiranctura') {
+            } else if ($_GET['learning'] === 'aspiranctura') {
                 $path = "frontend/html/learning_prices/aspiranctura.html";
             }
         } else {
@@ -16,6 +16,8 @@ if ($_SERVER['REQUEST_METHOD'] == "GET") {
         $path = "frontend/html/library.html";
     } else if (isset($_GET['history'])) { // получение страницы История
         $path = "frontend/html/history.html";
+    } else if (isset($_GET['contactInfo'])) { // получение страницы История
+        $path = "frontend/html/contactInfo.html";
     } else if (isset($_GET['scientific'])) { // получение страницы История
         $path = "frontend/html/scientific_work.html";
     } else if (!empty($_GET['employee_info'])) { // запросы для биографии работников
