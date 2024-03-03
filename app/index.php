@@ -8,6 +8,10 @@ if ($_SERVER['REQUEST_METHOD'] == "GET") {
                 $path = "frontend/html/learning_prices/ordinatura.html";
             } else if ($_GET['learning'] === 'aspiranctura') {
                 $path = "frontend/html/learning_prices/aspiranctura.html";
+            } else if ($_GET['learning'] === 'prof_retraining') {
+                $path = "frontend/html/learning_prices/professional_retraining.html";
+            } else if ($_GET['learning'] === 'certification_cycles') {
+                $path = "frontend/html/learning_prices/certification_cycles.html";
             }
         } else {
             $path = "frontend/html/learning.html";

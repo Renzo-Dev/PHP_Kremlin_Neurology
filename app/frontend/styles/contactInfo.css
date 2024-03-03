@@ -63,6 +63,9 @@ main {
     }
 
     .maps > div > h2 {
+        padding: 10px;
+        border-radius: 13px;
+        border: 2px solid #e1e1e1;
         font-size: calc(4 * .27vw);
         text-align: center;
         margin: 5px 20px;
