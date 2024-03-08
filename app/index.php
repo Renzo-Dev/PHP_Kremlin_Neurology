@@ -20,6 +20,8 @@ if ($_SERVER['REQUEST_METHOD'] == "GET") {
         $path = "frontend/html/library.html";
     } else if (isset($_GET['history'])) { // получение страницы История
         $path = "frontend/html/history.html";
+    } else if (isset($_GET['clinical_base'])) {
+        $path = "frontend/html/clinical_base/clinical_base.html";
     } else if (isset($_GET['contactInfo'])) { // получение страницы История
         $path = "frontend/html/contactInfo.html";
     } else if (isset($_GET['scientific'])) { // получение страницы История
