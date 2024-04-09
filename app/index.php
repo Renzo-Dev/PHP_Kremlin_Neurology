@@ -22,6 +22,12 @@ if ($_SERVER['REQUEST_METHOD'] == "GET") {
         $path = "frontend/html/history.html";
     } else if (isset($_GET['clinical_base'])) {
         $path = "frontend/html/clinical_base/clinical_base.html";
+    } else if (isset($_GET['gkb51'])) {
+        $path = "frontend/html/clinical_base/gkb51.html";
+    } else if (isset($_GET['conference_neuro_sc'])) {
+        $path = "frontend/html/conference_neuro/conference_neuro_sc.html";
+    } else if (isset($_GET['conference_neuro_univer'])) {
+        $path = "frontend/html/conference_neuro/conference_neuro_univer.html";
     } else if (isset($_GET['contactInfo'])) { // получение страницы История
         $path = "frontend/html/contactInfo.html";
     } else if (isset($_GET['scientific'])) { // получение страницы История
