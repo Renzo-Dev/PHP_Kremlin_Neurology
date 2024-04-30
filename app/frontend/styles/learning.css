@@ -14,15 +14,15 @@
     #mainContent > h2 {
         width: inherit;
         text-align: center;
-        font-size: calc(12 * .25vw);
+        font-size: calc(13 * .25vw);
     }
 
     .qualifications {
         display: flex;
         text-align: center;
         padding: 15px;
-        height: 80px;
-        width: 100%;
+        min-height: calc(45 * .50vw);
+        width: 90%;
         overflow: auto;
     }
 
