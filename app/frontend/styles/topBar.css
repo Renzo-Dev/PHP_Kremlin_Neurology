@@ -135,7 +135,7 @@ header {
     }
 
     .topBarContext > a > div:first-child {
-        font-size: calc(19* .17vw);
+        font-size: calc(19 * .17vw);
     }
 
     .topBarContext > a > div {
@@ -295,6 +295,11 @@ header {
     #dropdown-content > a:last-child {
         margin-top: 10px;
     }
+}
+
+.topBarImages > img:first-child {
+    /*display: none;*/
+    visibility: hidden;
 }
 
 .topBarImages {

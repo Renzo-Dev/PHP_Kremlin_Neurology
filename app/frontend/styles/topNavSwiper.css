@@ -7,7 +7,7 @@
 
 @media (min-width: 600px) and (max-width: 899px) {
     .swiper-slide > a {
-        font-size: calc(13 * .25vw);
+        font-size: calc(10 * .25vw);
         padding: calc(1 * .45vw) 0;
     }
 }
