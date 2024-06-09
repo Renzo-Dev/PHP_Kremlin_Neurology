@@ -7,11 +7,70 @@ main {
     align-items: center;
 }
 
-@media (min-width: 1280px) {
-    h1,h2 {
+@media (min-width: 280px) and (max-width: 599px) {
+    h1, h2 {
         text-align: center;
         height: fit-content;
-        font-size: calc(5 * .25vw);
+        font-size: calc(13 * .25vw);
+        margin: 10px 0;
+    }
+
+    .info {
+        max-height: 30vh;
+        overflow: auto;
+        font-family: 'Lato', sans-serif;
+        font-size: calc(13 * .25vw);
+        text-align: left;
+        margin: 0 30px;
+    }
+    iframe {
+        width: calc(150 * .50vw);
+        height: calc(150 * .50vw);
+        margin: 50px 0;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+    h1, h2 {
+        text-align: center;
+        height: fit-content;
+        font-size: calc(12 * .25vw);
+        margin: 10px 0;
+    }
+
+    .info {
+        max-height: 30vh;
+        overflow: auto;
+        font-family: 'Lato', sans-serif;
+        font-size: calc(10 * .25vw);
+        text-align: left;
+        margin: 0 30px;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1279px) {
+    h1, h2 {
+        text-align: center;
+        height: fit-content;
+        font-size: calc(9 * .25vw);
+        margin: 10px 0;
+    }
+
+    .info {
+        max-height: 30vh;
+        overflow: auto;
+        font-family: 'Lato', sans-serif;
+        font-size: calc(7 * .25vw);
+        text-align: left;
+        margin: 0 30px;
+    }
+}
+
+@media (min-width: 1280px) {
+    h1, h2 {
+        text-align: center;
+        height: fit-content;
+        font-size: calc(7 * .25vw);
         margin: 10px 0;
     }
 

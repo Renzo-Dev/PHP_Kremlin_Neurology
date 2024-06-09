@@ -6,6 +6,13 @@
 }
 
 @media (min-width: 250px) and (max-width: 599px) {
+    .info {
+        font-size: calc(15 * .25vw);
+        max-height: 8vh;
+        min-height: 50px;
+        overflow: auto;
+    }
+
     .textContent {
         width: 84%;
         text-align: left;
@@ -25,12 +32,12 @@
 
     .textContent > h3:first-child {
         text-align: center;
-        font-size: calc(13 * .25vw);
+        font-size: calc(15 * .25vw);
         margin-bottom: 10px;
     }
 
     .textContent > h4, h3 {
-        font-size: calc(10 * .25vw);
+        font-size: calc(13 * .25vw);
         text-align: left;
         margin-bottom: 10px;
     }
@@ -50,7 +57,7 @@
     #LibraryAccess > div {
         text-align: center;
         width: 100%;
-        font-size: calc(10 * .25vw);
+        font-size: calc(13 * .25vw);
         font-weight: 600;
         margin-bottom: 20px;
     }
@@ -62,13 +69,13 @@
         border-radius: 4px;
         width: 100%;
         padding: 5px;
-        font-size: calc(10 * .25vw);
+        font-size: calc(13 * .25vw);
     }
 
     #LibraryAccess > button {
         display: none;
         border: 1px solid black;
-        font-size: calc(10 * .25vw);
+        font-size: calc(14 * .25vw);
         margin-top: 10px;
         padding: 3px 20px;
         border-radius: 5px;
@@ -88,7 +95,7 @@
         text-align: left;
         margin-top: 15px;
         color: red;
-        font-size: calc(10 * .25vw);
+        font-size: calc(13 * .25vw);
         font-family: Arial, serif;
     }
 
@@ -103,7 +110,7 @@
     .textContent > .accordion {
         background-color: #d7d7d7;
         color: black;
-        font-size: calc(10 * .25vw);
+        font-size: calc(13 * .25vw);
         cursor: pointer;
         padding: 10px;
         width: fit-content;
@@ -117,7 +124,7 @@
     .accordion {
         background-color: #d7d7d7;
         color: black;
-        font-size: calc(10 * .25vw);
+        font-size: calc(13 * .25vw);
         cursor: pointer;
         padding: 10px;
         width: 100%;
@@ -137,7 +144,7 @@
         padding: 0 10px;
         height: 0;
         max-height: 250px;
-        font-size: calc(10 * .25vw);
+        font-size: calc(13 * .25vw);
         overflow: auto;
         transition: height 0.2s ease-out;
     }
