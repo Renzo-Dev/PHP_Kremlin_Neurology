@@ -74,7 +74,8 @@ main {
         background-color: #dbe2ee;
         display: flex;
         flex-direction: column;
-        width: 50%;
+        width: 100%;
+        margin-top: 50px;
         align-items: center;
     }
 
@@ -85,16 +86,23 @@ main {
     }
 
     .map > iframe {
-        width: calc(60 * 1vw);
-        height: calc(60 * 1vw);
+        width: calc(90 * 1vw);
+        height: calc(50 * 1vw);
         max-width: 100%;
         min-width: 50%;
+    }
+
+    .maps {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
 
 @media (min-width: 600px) and (max-width: 899px) {
+
     .info__wrapper > h2 {
-        font-size: calc(13 * .25vw);
+        font-size: calc(11 * .25vw);
     }
 
     .info > div:first-child {
@@ -102,16 +110,16 @@ main {
     }
 
     .info > div > div {
-        font-size: calc(11 * .25vw);
+        font-size: calc(9 * .25vw);
     }
 
     .info > div > ul > li {
-        font-size: calc(10 * .25vw);
+        font-size: calc(9 * .25vw);
     }
 
     .info > div > h3 {
         text-align: center;
-        font-size: calc(11 * .25vw);
+        font-size: calc(8 * .25vw);
     }
 
     .info {
@@ -123,14 +131,13 @@ main {
     }
 
     .info2 > div > h3 {
-        font-size: calc(11 * .25vw);
+        font-size: calc(8 * .25vw);
     }
 
     .info2 > div:last-child {
         margin-top: 5px;
-        font-size: calc(10 * .25vw);
+        font-size: calc(8 * .25vw);
     }
-
 
     .maps > div {
         padding: 20px;
@@ -144,21 +151,31 @@ main {
     .maps > div > h2 {
         margin-bottom: 50px;
         text-align: center;
-        font-size: calc(10 * .25vw)
+        font-size: calc(8 * .25vw)
     }
 
     .map > iframe {
-        width: calc(60 * 1vw);
-        height: calc(60 * 1vw);
+        width: calc(40 * 1vw);
+        height: calc(35 * 1vw);
         max-width: 100%;
         min-width: 50%;
     }
+
     .info2 > div > h3 > a:last-child {
         background-color: #dddddd;
+    }
+
+    .maps {
+        flex-direction: row;
     }
 }
 
 @media (min-width: 900px) and (max-width: 1279px) {
+
+    .maps > div:last-child {
+        margin-left: 15px;
+    }
+
     .info__wrapper > h2 {
         font-size: calc(7 * .25vw);
     }
@@ -205,8 +222,8 @@ main {
     }
 
     .map > iframe {
-        width: calc(60 * 1vw);
-        height: calc(60 * 1vw);
+        width: calc(35 * 1vw);
+        height: calc(30 * 1vw);
         max-width: 100%;
         min-width: 50%;
     }
@@ -220,8 +237,17 @@ main {
         margin-right: auto;
         margin-left: calc(10 * .25vw);
     }
+
     .info2 > div > h3 > a:last-child {
         background-color: #dddddd;
+    }
+
+    .maps {
+        flex-direction: row;
+    }
+
+    .maps > div:last-child {
+        margin-left: 15px;
     }
 }
 
@@ -280,12 +306,12 @@ main {
     .maps > div > h2 {
         margin-bottom: 50px;
         text-align: center;
-        font-size: calc(6 * .25vw)
+        font-size: calc(5 * .25vw)
     }
 
     .map > iframe {
-        width: calc(60 * 1vw);
-        height: calc(60 * 1vw);
+        width: calc(35 * 1vw);
+        height: calc(30 * 1vw);
         max-width: 100%;
         min-width: 50%;
     }
@@ -299,6 +325,14 @@ main {
         margin-right: auto;
         margin-left: calc(10 * .25vw);
     }
+
+    .maps {
+        flex-direction: row;
+    }
+    .maps > div:last-child {
+        margin-left: 15px;
+    }
+
 }
 
 .map {
@@ -307,7 +341,6 @@ main {
 
 .maps > div:last-child {
     border-radius: 13px;
-    margin-left: 15px;
 }
 
 .maps > div:first-child {
@@ -379,8 +412,8 @@ main {
 
 .maps {
     display: flex;
-    flex-direction: row;
     width: 100%;
     padding: 10px;
     justify-content: center;
+    align-items: center;
 }

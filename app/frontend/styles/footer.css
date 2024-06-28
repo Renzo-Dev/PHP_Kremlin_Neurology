@@ -1,6 +1,6 @@
 @media (min-width: 280px) and (max-width: 599px) {
     footer {
-        font-size: calc(8 * .25vw);
+        font-size: calc(10 * .25vw);
     }
 }
 

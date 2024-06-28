@@ -2,7 +2,7 @@
 $path = "frontend/html/main.html";
 
 if ($_SERVER['REQUEST_METHOD'] == "GET") {
-    if (isset($_GET['learning'])) { // получения страницы Библиотека
+    if (isset($_GET['learning'])) {
         if (!empty($_GET['learning'])) {
             if ($_GET['learning'] === 'ordinatura') {
                 $path = "frontend/html/learning_prices/ordinatura.html";
@@ -22,6 +22,12 @@ if ($_SERVER['REQUEST_METHOD'] == "GET") {
         $path = "frontend/html/history.html";
     } else if (isset($_GET['clinical_base'])) {
         $path = "frontend/html/clinical_base/clinical_base.html";
+    } else if (isset($_GET['news'])) {
+        $path = "frontend/html/news.html";
+    } else if (isset($_GET['subscribe'])) {
+        $path = "frontend/html/subscribe.html";
+    } else if (isset($_GET['mnevr'])) {
+        $path = "frontend/html/mnevr.html";
     } else if (isset($_GET['gkb51'])) {
         $path = "frontend/html/clinical_base/gkb51.html";
     } else if (isset($_GET['conference_neuro_sc'])) {
