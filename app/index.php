@@ -32,6 +32,26 @@ if ($_SERVER['REQUEST_METHOD'] == "GET") {
         $path = "frontend/html/clinical_base/gkb51.html";
     } else if (isset($_GET['conference_neuro_sc'])) {
         $path = "frontend/html/conference_neuro/conference_neuro_sc.html";
+    } else if (isset($_GET['conference_neuro_sc/2010'])) {
+        $path = "frontend/html/conference_neuro/2010.html";
+    } else if (isset($_GET['conference_neuro_sc/2011'])) {
+        $path = "frontend/html/conference_neuro/2011.html";
+    } else if (isset($_GET['conference_neuro_sc/2012'])) {
+        $path = "frontend/html/conference_neuro/2012.html";
+    } else if (isset($_GET['conference_neuro_sc/2013'])) {
+        $path = "frontend/html/conference_neuro/2013.html";
+    } else if (isset($_GET['conference_neuro_sc/2014'])) {
+        $path = "frontend/html/conference_neuro/2014.html";
+    } else if (isset($_GET['conference_neuro_sc/2015'])) {
+        $path = "frontend/html/conference_neuro/2015.html";
+    } else if (isset($_GET['conference_neuro_sc/2016'])) {
+        $path = "frontend/html/conference_neuro/2016.html";
+    } else if (isset($_GET['conference_neuro_sc/2017'])) {
+        $path = "frontend/html/conference_neuro/2017.html";
+    } else if (isset($_GET['conference_neuro_sc/2018'])) {
+        $path = "frontend/html/conference_neuro/2018.html";
+    } else if (isset($_GET['conference_neuro_sc/2019'])) {
+        $path = "frontend/html/conference_neuro/2019.html";
     } else if (isset($_GET['conference_neuro_univer'])) {
         $path = "frontend/html/conference_neuro/conference_neuro_univer.html";
     } else if (isset($_GET['contactInfo'])) { // получение страницы История

@@ -1,0 +1,55 @@
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+p {
+    margin: 10px 0;
+}
+
+.year > a {
+    text-decoration: none;
+}
+
+.year {
+    font-weight: bold;
+    color: #0066cc;
+}
+
+.highlight {
+    background-color: #ffeb3b;
+    padding: 2px 4px;
+}
+
+.koef_provider {
+    font-size: calc(4 * .25vw);
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 13px;
+    background-color: #e3e3e3;
+}
+
+.koef_provider > div > .email{
+    color: blue;
+}
+
+.map > iframe {
+    width: calc(35 * 1vw);
+    height: calc(30 * 1vw);
+    max-width: 100%;
+    min-width: 50%;
+}

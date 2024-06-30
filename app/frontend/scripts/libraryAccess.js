@@ -47,7 +47,8 @@ window.addEventListener('DOMContentLoaded', () => {
         if (regex.test(password)) {
             try {
                 let currentUrl = window.location.href;
-                let queryPath = currentUrl.replace('index.php?library', '');
+                // let queryPath = currentUrl.replace('index.php?library', '');
+                let queryPath = currentUrl.replace('?library', '');
                 queryPath += "backend/AccessLibrary.php";
 
                 // Отправляем запрос на сервер для проверки пароля
