@@ -303,8 +303,8 @@ header {
 }
 
 .topBarImages > img:first-child {
-    /*display: none;*/
-    /*visibility: hidden;*/
+    display: none;
+    visibility: hidden;
 }
 
 .topBarImages {
