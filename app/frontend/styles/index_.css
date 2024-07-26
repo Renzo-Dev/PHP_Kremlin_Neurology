@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+h2 {
+    font-family: 'Lato', sans-serif;
+}
+
 main {
     width: 100%;
     flex: 1;
@@ -11,10 +15,6 @@ main {
     cursor: default;
     display: flex;
     flex: 1;
-}
-
-h2 {
-    font-family: 'Lato', sans-serif;
 }
 
 .context,
@@ -32,6 +32,7 @@ h2 {
 .context p {
     text-align: left;
     font-size: calc(5 * .25vw);
+
 }
 
 .context p a:visited {
@@ -61,7 +62,7 @@ fieldset legend a:hover {
 
 @media (min-width: 280px) and (max-width: 599px) {
     main {
-        min-height: 515px;
+        min-height: 615px;
         flex-direction: column-reverse;
     }
 
@@ -162,7 +163,7 @@ fieldset legend a:hover {
         border: 1px solid black;
         font-size: calc(11 * .25vw);
         margin-top: auto;
-        min-height: fit-content;
+        min-height: 100px;
 
         overflow: auto;
         display: flex;
@@ -218,7 +219,7 @@ fieldset legend a:hover {
 
 @media (min-width: 600px) and (max-width: 899px) {
     main {
-        min-height: 403px;
+        min-height: 503px;
     }
 
     .context__wrapper {
@@ -316,7 +317,7 @@ fieldset legend a:hover {
         border: 1px solid black;
         font-size: calc(7 * .30vw);
         margin-top: auto;
-        min-height: fit-content;
+        min-height: 150px;
 
         overflow: auto;
         display: flex;
@@ -369,7 +370,7 @@ fieldset legend a:hover {
 
 @media (min-width: 900px) and (max-width: 1279px) {
     main {
-        min-height: 503px;
+        min-height: 543px;
     }
 
     .content__wrapper {
@@ -384,10 +385,10 @@ fieldset legend a:hover {
     }
 
     .context {
-        min-height: inherit;
+        overflow: auto;
+        min-height: 200px;
         padding: 0 20px;
-        height: calc(19 * 1vw);
-        max-height: max-content;
+        max-height: calc(30 * 1vh);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -506,7 +507,7 @@ fieldset legend a:hover {
 
 @media (min-width: 1280px) {
     main {
-        min-height: 470px;
+        min-height: 550px;
     }
 
     .employee_wrapper {
